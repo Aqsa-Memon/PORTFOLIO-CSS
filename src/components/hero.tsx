@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero-section">
       <div className="hero-content">
       <h1 className="hero-title">
-  Hello, I'm <span className="hero-name">UROOJ MEMON</span>
+  Hello, {`I'm`} <span className="hero-name">UROOJ MEMON</span>
 </h1>
 <div className="hero-subtitle">
   <Typewriter
