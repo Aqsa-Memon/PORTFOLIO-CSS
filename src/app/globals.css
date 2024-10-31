@@ -220,9 +220,6 @@ header ul a {
 }
 
 
-
-
-
 /* Hero Section Styles */
 .hero-section {
   display: flex;
@@ -261,6 +258,7 @@ header ul a {
   max-width: 800px;
   margin: 0 auto;
 }
+
 /* Centered alignment for the Hero Title and Subtitle */
 .hero-title, .hero-subtitle {
   display: flex;
@@ -272,16 +270,16 @@ header ul a {
 
 /* Styles for the main Hero Title */
 .hero-title {
-  font-size: 2.5rem; /* Adjust for a larger heading size */
+  font-size: 2.5rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 1rem; /* Space between title and typewriter */
-  animation: fadeInDown 1s ease; /* Optional animation */
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease;
 }
 
 /* Highlighted name style */
 .hero-name {
-  color: #3e0962; /* Customize color */
+  color: #3e0962;
   font-weight: bold;
   display: inline-block;
 }
@@ -293,7 +291,7 @@ header ul a {
   font-style: italic;
   font-weight: 500;
   padding-top: 0.5rem;
-  animation: fadeInUp 1s ease; /* Fade in animation */
+  animation: fadeInUp 1s ease;
 }
 
 /* Fade-in animations */
@@ -307,7 +305,7 @@ header ul a {
   to { opacity: 1; transform: translateY(0); }
 }
 
-
+/* Button Styles */
 .hero-button {
   background-color: #ffffff;
   color: #8e44ad;
@@ -326,11 +324,63 @@ header ul a {
   color: #ffffff;
 }
 
+/* Responsive Adjustments */
+
+/* Small screens */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+  }
+
+  .hero-button {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-button {
+    padding: 11px 28px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.7rem;
+  }
+
+  .hero-button {
+    padding: 14px 34px;
+    font-size: 1.1rem;
+  }
+}
+
+
 
 /* About Section Styles */
 .about-section {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #2a2b2c, #8e44ad); /* Soft gradient background */
+  background: linear-gradient(135deg, #2a2b2c, #8e44ad);
   display: flex;
   justify-content: center;
 }
@@ -343,6 +393,7 @@ header ul a {
   flex-direction: row;
 }
 
+/* Image Container */
 .about-image-container {
   flex: 1;
   display: flex;
@@ -362,6 +413,7 @@ header ul a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Text Content */
 .about-text {
   flex: 2;
   color: #0b0a0a;
@@ -387,6 +439,7 @@ header ul a {
   margin-bottom: 20px;
 }
 
+/* Button Styling */
 .about-button {
   padding: 10px 25px;
   font-size: 1rem;
@@ -404,6 +457,63 @@ header ul a {
   background-color: #a668dc;
   transform: scale(1.05);
 }
+
+/* Responsive Adjustments */
+
+/* Small Screens */
+@media (max-width: 640px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-description {
+    font-size: 1.05rem;
+  }
+
+  .about-button {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .about-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+/* contact */
 
 .contact-container {
   display: flex;
